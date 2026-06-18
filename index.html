@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marce's Meme Examination</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- START SCREEN -->
+
+<section id="start-screen" class="screen active">
+
+    <div class="card">
+
+        <h1>📋 Official Marce Examination</h1>
+
+        <p>
+            This examination contains extremely serious
+            meme-related questions.
+        </p>
+
+        <p>
+            Please answer honestly.
+        </p>
+
+        <button id="startBtn">
+            Begin Examination
+        </button>
+
+    </div>
+
+</section>
+
+<!-- QUESTION SCREEN -->
+
+<section id="question-screen" class="screen">
+
+    <div class="card">
+
+        <div id="questionCounter">
+            Question 1 / 20
+        </div>
+
+        <img
+            id="questionImage"
+            src=""
+            alt="meme">
+
+        <h2 id="questionPrompt">
+            Prompt
+        </h2>
+
+        <textarea
+            id="answerInput"
+            placeholder="Write your answer here..."></textarea>
+
+        <p id="warningText"></p>
+
+        <button id="nextBtn">
+            Next ➜
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PHOTO QUESTION -->
+
+<section id="photo-screen" class="screen">
+
+    <div class="card">
+
+        <img
+            src="images/croissant-photo.png"
+            class="croissant-photo"
+            alt="photo">
+
+        <h2>
+            Who is cooler in this picture?
+        </h2>
+
+        <div class="choice-buttons">
+
+            <button class="photoChoice" data-value="marce">
+                Marce 😎
+            </button>
+
+            <button class="photoChoice" data-value="croissant">
+                Croissant 😎
+            </button>
+
+            <button class="photoChoice" data-value="both">
+                Both 😎
+            </button>
+
+        </div>
+
+        <p id="photoMessage"></p>
+
+        <button id="photoContinue" style="display:none;">
+            Continue ❤️
+        </button>
+
+    </div>
+
+</section>
+
+<!-- CROISSANT QUESTION -->
+
+<section id="croissant-screen" class="screen">
+
+    <div class="card">
+
+        <h1>One Final Question...</h1>
+
+        <h2>Do you love croissant?</h2>
+
+        <div class="choice-buttons">
+
+            <button class="croissantBtn" data-answer="YES">
+                YES
+            </button>
+
+            <button class="croissantBtn" data-answer="NO">
+                NO
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- JOKE SCREEN -->
+
+<section id="joke-screen" class="screen">
+
+    <div class="card">
+
+        <h1>😭</h1>
+
+        <p>
+            I was talking about the French food btw.
+        </p>
+
+        <p>
+            Though thanks for the answer.
+        </p>
+
+        <button id="revealBtn">
+            Reveal Answers
+        </button>
+
+    </div>
+
+</section>
+
+<!-- REVIEW SCREEN -->
+
+<section id="review-screen" class="screen">
+
+    <div class="card">
+
+        <h1>Your Answers</h1>
+
+        <div id="reviewContainer"></div>
+
+        <button id="finalBtn">
+            Final Message ❤️
+        </button>
+
+    </div>
+
+</section>
+
+<!-- FINAL SCREEN -->
+
+<section id="final-screen" class="screen">
+
+    <div class="card">
+
+        <h1>❤️</h1>
+
+        <h2>Official Diagnosis:</h2>
+
+        <h1>100% Marce</h1>
+
+        <p class="final-message">
+
+            Thank you for all the laughs,
+            reactions,
+            cats,
+            memes,
+            and everything else. 🥹💗
+
+        </p>
+
+        <h2>
+
+            u r the most slaya girl
+            ive ever known f 7yati
+
+        </h2>
+
+    </div>
+
+</section>
+
+<!-- AUDIO -->
+
+<audio id="noSound" src="audio/no.mp3"></audio>
+
+<audio id="yippeeSound" src="audio/yippee.mp3"></audio>
+
+<audio id="startSound" src="audio/start.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
